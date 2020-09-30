@@ -1,6 +1,7 @@
 import React from "react";
+import "./BoundingBox.css";
 
-const BoundingBox = (box, i) => {
+const BoundingBox = ({box}) => {
   return (
     <div
       className="bounding-box"

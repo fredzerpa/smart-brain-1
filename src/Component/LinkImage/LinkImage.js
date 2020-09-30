@@ -1,12 +1,12 @@
 import React from "react";
-import "./LinkImage.css";
 import BoundingBox from "../BoundingBox/BoundingBox";
 
 const LinkImage = ({ showImage, blueBox }) => {
+  console.log({blueBox});
   return (
     <div className="center ma">
       <div className="absolute mt2">
-        <img id="image" alt="" src={showImage} width="700px" height="auto" />
+        <img id="inputimage" alt="" src={showImage} width="500px" height="auto" />
         {blueBox.map((box, i) => (
           <BoundingBox box={box} key={i} />
         ))}

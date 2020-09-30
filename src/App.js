@@ -40,12 +40,12 @@ class App extends Component {
     this.state = {
       input: "",
       imageLink: "",
-      box: {},
+      box: [],
     };
   }
 
   detectFaceLocation = (data) => {
-    const image = document.getElementById("image");
+    const image = document.getElementById("inputimage");
     const width = Number(image.width);
     const height = Number(image.height);
     const allFaceLocation = data.outputs[0].data.regions;
